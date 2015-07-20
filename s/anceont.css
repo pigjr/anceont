@@ -1,7 +1,7 @@
 body {
   background-color: #F8F8F8;
   font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
+  /*font-size: 32px;*/
   font-weight: normal;
   line-height: 1.2em;
   margin: 15px;
@@ -12,12 +12,8 @@ h1, p {
 }
 
 #canvas2d {
-   #width: 50%;
-   #height: 50%;
    left:0;
-   #z-index: 100;
    position:absolute;
-   #background-color: #fff;
 }
 
 
@@ -37,7 +33,6 @@ h1, p {
   border: 1px solid #ccc;
   border-radius: 5px;
   font-weight:bold;
-  #background-color: #eee;
   padding: 3px;
   display:inline-block; 
   margin: 10px;
@@ -63,13 +58,23 @@ h1, p {
 }
 
 #edit {
-  border: 1px solid #ccc;
+  /*border: 1px solid #ccc;
   border-radius: 5px;
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(255,255,255,1);
   position:absolute;
-  margin: 10px;
-  top:0;
+  margin: 10px;*/
   z-index:100;
+}
+
+.logo {
+  border: 1px solid #ccc;
+  border-radius: 5px 0px;
+  background-color: rgba(255,255,200,1);
+  position:absolute;
+  padding: 5px;
+  top:-1px;
+  left:-1px;
+  z-index:10;
 }
 
 
@@ -83,22 +88,24 @@ h1, p {
     background: #ff6;
 }
 
-#menu {
+/*#menu {
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: rgba(255,255,255,0.5);
   position:absolute;
   margin-top: 10px;
-  #bottom:0;
+  bottom:0;
   right:12px;
   z-index:100;
   display:inline-block;
-  
-}
+}*/
 
-#util {
-  position:absolute;
-  bottom:0;
-  display:inline-block;
-  text-align: center;
+.float {
+  float:left;
+  margin:5px;
+  padding-top:15px;
 }
+/*
+.general {
+  font-size: 10px;
+  }*/

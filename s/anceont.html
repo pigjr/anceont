@@ -5,6 +5,14 @@
     <meta charset="utf-8">
     <title>Anceont</title>
     <link rel="stylesheet" href="anceont.css">
+    <!--<link rel="import" href="button.html">
+    <link rel="import" href="popover.html">
+    
+    <link rel="import" href="package:bee/components/secret.html">
+    <link rel="import" href="package:bee/components/loading.html">
+    
+    <link rel="import" href="package:bee/components/overlay.html">-->
+    
     <script type="application/javascript" src="anceont.dart.js"></script>
     <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
   </head>
@@ -17,7 +25,6 @@
   js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-      
     
     <!--
     <header>
@@ -49,35 +56,47 @@
     <div id="canvas">
     <canvas id="canv"></canvas>
     </div>-->
-    <div id="edit">
-      <!--
-        ID: <input type='text' id='edit-id' readonly>
-      First Name: <input type='text' id='edit-firstName'>
-      Last Name: <input type='text' id='edit-lastName'>
-      Gender: <input type='text' id='edit-gender'>
-      <button id='edit-confirm'>Confirm</button>
-      -->
+    
+
+    
+    
+    <div class="logo" id="edit">
+      Anceont
     </div>
     
     
     
     </div>
-    <div id="menu">
-        
-      <button id='save'>Save -> </button>
-      <button id='load'>Load -> </button>
-      <input type="file" id="loadFile" name="loadFile" hidden="true">
+    
+    <div class="float">
+      <x-popover>
+        <div is="x-button" type="button" id="save" class="launch-area">Save</div>
+        <div id="save-overlay" class="body"></div>
+      </x-popover>
     </div>
+    <div class="float">  
+      <x-popover>
+        <div is="x-button" type="button" id="load" class="launch-area">Load</div>
+        <div class="body"><input type="file" id="loadFile" name="loadFile" hidden="true"></div>
+      </x-popover>      
+    </div>
+    
+    
+    
     <footer>
-    <p><b>Ance</b>stry (in <b>ont</b>ology), ver 0.2, by <a href="http://about.me/zhulingkai"/>Linnon</a></p>
-    <div><g:plusone size="medium"></g:plusone><div class="fb-like" data-href="http://anceont.appspot.com" data-send="false" data-layout="button_count" data-width="50" data-show-faces="true"></div></div>
+    <p style="text-align:right;"><b>Ance</b>stry (in <b>ont</b>ology), ver 0.3, by <a href="http://about.me/zhulingkai">Linnon</a></p>
+    <div style="float:right;"><g:plusone size="medium"></g:plusone><div class="fb-like" data-href="http://anceont.appspot.com" data-send="false" data-layout="button_count" data-width="50" data-show-faces="true"></div></div>
     
     
     
     
-    <p id="log" hidden="true">Log: </p>
+    
+    
+
     </footer>
+    <p id="log" hidden="true">Log: </p>
 
-
+    <script type="application/dart" src="anceont.dart"></script>
+    <script src="packages/browser/dart.js"></script>
   </body>
 </html>

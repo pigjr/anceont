@@ -1,1 +1,95 @@
-/home/l/Linker/dart_projects/anceont/web/anceont.css
+body {
+  background-color: #F8F8F8;
+  font-family: 'Open Sans', sans-serif;
+  /*font-size: 32px;*/
+  font-weight: normal;
+  line-height: 1.2em;
+  margin: 15px;
+}
+
+h1, p {
+  color: #333;
+}
+
+#canvas2d {
+   left:0;
+   position:absolute;
+}
+
+
+#container {
+  width: 100%;
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  text-align: center;
+
+}
+
+
+.pdiv {
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-weight:bold;
+  padding: 3px;
+  display:inline-block;
+  margin: 10px;
+  text-align: center;
+}
+.pdiv p {
+  color: #131723;
+}
+.pdiv p:hover {
+  color: red;
+  cursor:pointer;
+}
+
+.pbutton {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgba(255,0,0,0);
+  opacity: 0.2;
+}
+
+.pbutton:hover {
+  opacity: 1;
+}
+
+#edit {
+  /*border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgba(255,255,255,1);
+  position:absolute;
+  margin: 10px;*/
+  z-index:100;
+}
+
+.logo {
+  border: 1px solid #ccc;
+  border-radius: 5px 0px;
+  background-color: rgba(255,255,200,1);
+  position:absolute;
+  padding: 5px;
+  top:-1px;
+  left:-1px;
+  z-index:10;
+}
+
+
+#edit input[type="text"] {
+   border: 1px solid #006;
+   background: #ffc;
+   width:70px;
+}
+#edit input:hover[type="text"] {
+    border: 1px solid #f00;
+    background: #ff6;
+}
+
+.float {
+  float:left;
+  margin:5px;
+  padding-top:15px;
+}
